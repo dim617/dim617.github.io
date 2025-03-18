@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <link rel="stylesheet" href="estiloproyec.css">
+</head>
+<body>
+
+<h2 class="titulo">QUEREMOS SABER TU OPINION "TU OPINION ES IMPORTANTE"</h2>
+<form action="#">
+    <label for="nombre">Tu Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Tu Correo Electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="motivo">Motivo de tu opinión:</label>
+    <select id="motivo" name="motivo">
+        <option value="sugerencia">Sugerencia</option>
+        <option value="comentario">Comentario</option>
+        <option value="reclamo">Reclamo</option>
+        <option value="Reseña">Reseña</option>
+        <option value="Valoracion">Valoracion</option>
+    </select>
+
+    <label for="calificacion">Califica la página (1-10):</label>
+    <input type="number" id="calificacion" name="calificacion" min="1" max="10" required>
+
+    <label for="opinion">Tu Opinión:</label>
+    <textarea id="opinion" name="opinion" rows="6" required></textarea>
+
+    <input type="checkbox" id="terminos" name="terminos" required>
+    <label for="terminos">Acepto los términos y condiciones</label>
+    <p>(Derechos reservados al autor dimber lenadro ortiz balam encargado de realizar dicha pagina)</p>
+
+    <button type="submit">Enviar Opinión</button>
+</form>
+
+</body>
+</html>
